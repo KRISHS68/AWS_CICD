@@ -1,8 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    CODEBUILD_SOURCE_VERSION:"base-image"
 phases:
   pre_build:
     commands:
