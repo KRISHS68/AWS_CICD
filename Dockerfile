@@ -1,9 +1,7 @@
-FROM 576912678702.dkr.ecr.us-east-1.amazonaws.com/base-image
+FROM nginx:alpine
 
-ENV PORT=80
+ENV PORT=8080
 
 EXPOSE $PORT
 
-COPY app.js /app/
-
-CMD ["node", "/app/app.js"]
+COPY my.html /usr/share/nginx/html
