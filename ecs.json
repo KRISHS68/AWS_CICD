@@ -14,9 +14,7 @@
         "MyECSService": {
             "Type": "AWS::ECS::Service",
             "Properties" : {
-                "Cluster": {
-                    "Ref": "MyECSCluster"
-                },
+                "Cluster": "ecs-poc",
                 "DesiredCount": "1",
                 "TaskDefinition" : { "Ref": "Taskdefinition" }
             }
