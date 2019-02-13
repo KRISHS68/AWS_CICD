@@ -10,7 +10,9 @@
                         "Memory":"300",
                         "PortMappings":[
                             {
-                              "ContainerPort":80
+                              "ContainerPort":80,
+                              "hostPort": 8080,
+                              "protocol": "tcp"
                             }
                         ]
                     }                    
