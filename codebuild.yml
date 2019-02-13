@@ -1,0 +1,17 @@
+Type: AWS::CodeBuild::Project
+Properties: 
+  Artifacts:
+    Type: NO_ARTIFACTS
+  BadgeEnabled: False
+  Description: This would create cloudbuild project to push images to ECR
+  Environment:
+    ComputeType: BUILD_GENERAL1_SMALL
+    Image: aws/codebuild/docker:17.09.0
+    Type: LINUX_CONTAINER
+  LogsConfig:
+    Status: ENABLED        
+  Name: hello-world  
+  ServiceRole: arn:aws:iam::576912678702:role/codebuild_nginx_jenkins
+  Source:
+    Location: https://github.com/KRISHS68/AWS_CICD.git
+    Type: GITHUB
