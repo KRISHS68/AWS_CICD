@@ -1,17 +1,11 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Parameters":{
-        "repositoryName": {
-            "Type": "hello-world"
-        }
-    },
+    
     "Resources": {
         "ECR": {
             "Type": "AWS::ECR::Repository",
             "Properties": {
-                "RepositoryName": {
-                    "Ref": "repositoryName"
-                }
+                "RepositoryName": "hello-world"
             },
             "Metadata": {
                 "AWS::CloudFormation::Designer": {
