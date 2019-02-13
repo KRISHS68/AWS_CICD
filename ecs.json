@@ -12,7 +12,14 @@
                 "ContainerDefinitions": [
                     {
                         "Image": {
-                            "Fn::Join": [":","576912678702.dkr.ecr.us-east-1.amazonaws.com/hello-world",{"Ref":"tag"}]
+                            "Fn::Join": [
+                                ":",[
+                                "576912678702.dkr.ecr.us-east-1.amazonaws.com/hello-world",
+                                {
+                                    "Ref":"tag"
+                                }
+                                ]
+                            ]
                         },
                         "Name": "nginx",
                         "Memory":"300",
