@@ -1,4 +1,12 @@
 {
+    "Parameters":{
+        "Tag":{
+            "Type": "String",
+            "Default": {
+                "Ref":"tag"
+            }
+        }        
+    },
     "Resources": {
         "Taskdefinition": {
             "Type" : "AWS::ECS::TaskDefinition",
@@ -10,7 +18,7 @@
                                 ":",[
                                 "576912678702.dkr.ecr.us-east-1.amazonaws.com/hello-world",
                                 {
-                                    "Ref":"tag"
+                                    "Ref":"Tag"
                                 }
                                 ]
                             ]
