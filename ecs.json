@@ -6,7 +6,8 @@
                 "ContainerDefinitions": [
                     {
                         "Image": "576912678702.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest",
-                        "Name": "nginx"
+                        "Name": "nginx",
+                        "Memory":"300"
                     }                    
                 ]
             }
