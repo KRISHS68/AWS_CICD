@@ -1,7 +1,8 @@
 {
     "Parameters": {
       "repositoryName": {
-        "Type": "hello-world"
+        "Type": "String",
+        "Default": "hello-world"
       }
     },
     "Resources": {
