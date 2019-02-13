@@ -1,7 +1,7 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
-        "CBP1H4YK": {
+        "CodeBuild": {
             "Type": "AWS::CodeBuild::Project",
             "Properties": {
                 "Artifacts" : {

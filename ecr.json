@@ -1,0 +1,35 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters":{
+        "repositoryName": {
+        "Type": "hello-world"
+        }
+    },
+    "Resources": {
+        "ECR": {
+            "Type": "AWS::ECR::Repository",
+            "Properties": {
+                "RepositoryName": {
+                "Ref": "repositoryName"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "5bd08d4b-60ec-4665-a39d-484bdc6a51f0"
+                }
+            },
+            "Outputs": {
+                "Arn": {
+                    "Value": {
+                        "Fn::GetAtt": [
+                            "ECR",
+                            "Arn"
+                        ]
+                    }
+                }
+                
+            }
+
+        }
+    }
+}
