@@ -2,7 +2,7 @@
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters":{
         "repositoryName": {
-        "Type": "hello-world"
+            "Type": "hello-world"
         }
     },
     "Resources": {
