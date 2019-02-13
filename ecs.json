@@ -1,10 +1,4 @@
 {
-    "Parameters": {
-        "tag": {
-            "Type": "String",
-            "Description": "Enter the TFS Release Identifier"
-        }
-    },
     "Resources": {
         "Taskdefinition": {
             "Type" : "AWS::ECS::TaskDefinition",
