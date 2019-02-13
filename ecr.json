@@ -10,7 +10,7 @@
             "Type": "AWS::ECR::Repository",
             "Properties": {
                 "RepositoryName": {
-                "Ref": "repositoryName"
+                    "Ref": "repositoryName"
                 }
             },
             "Metadata": {
