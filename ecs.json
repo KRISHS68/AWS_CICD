@@ -1,0 +1,30 @@
+{
+    "Resources": {
+        "MyECSCluster": {
+            "Type": "AWS::ECS::Cluster",
+            "Properties" : {
+              "ClusterName" : "ecs-poc"
+            }
+        },
+        "Taskdefinition": {
+            "Type" : "AWS::ECS::TaskDefinition",
+            "Properties" : {
+                "ContainerDefinitions": {
+                    "Image": "576912678702.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest",
+                    "Name": "nginx"
+                }
+            }
+        },
+        "MyECSService": {
+            "Type": "AWS::ECS::Service",
+            "Properties" : {
+                "Cluster": {
+                    "Ref": "MyECSCluster"
+                },
+                "DesiredCount": "1",
+                "TaskDefinition" : { "Ref": "Taskdefinition" }
+            }
+
+        }
+    }
+}
