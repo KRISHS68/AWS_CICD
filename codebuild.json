@@ -7,7 +7,7 @@
                 "Artifacts" : {
                     "Type": "NO_ARTIFACTS"
                 },
-                "Description" : "This is to create a codebuild project",
+                "Description" : "This is to create a codebuild project of nginx",
                 "Environment" : {
                     "ComputeType": "BUILD_GENERAL1_SMALL",
                     "Image": "aws/codebuild/docker:17.09.0",
@@ -33,3 +33,5 @@
         }
     }
 }
+---
+
