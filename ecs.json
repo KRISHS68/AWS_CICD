@@ -1,10 +1,7 @@
 {
     "Parameters":{
-        "Tag":{
-            "Type": "String",
-            "Default": {
-                "Ref":"tag"
-            }
+        "tag":{
+            "Type": "String"
         }        
     },
     "Resources": {
@@ -18,7 +15,7 @@
                                 ":",[
                                 "576912678702.dkr.ecr.us-east-1.amazonaws.com/hello-world",
                                 {
-                                    "Ref":"Tag"
+                                    "Ref":"tag"
                                 }
                                 ]
                             ]
