@@ -1,20 +1,5 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Metadata": {
-        "AWS::CloudFormation::Designer": {
-            "586628dc-4be9-4869-8d4f-0aa9a3791692": {
-                "size": {
-                    "width": 60,
-                    "height": 60
-                },
-                "position": {
-                    "x": 261,
-                    "y": 89
-                },
-                "z": 0
-            }
-        }
-    },
     "Resources": {
         "CBP1H4YK": {
             "Type": "AWS::CodeBuild::Project",
@@ -29,7 +14,9 @@
                     "Type": "LINUX_CONTAINER"
                 },
                 "LogsConfig" : {
-                    "Status": "ENABLED" 
+                    "CloudWatchLogs" : {
+                        "Status": "ENABLED"
+                    }
                 },
                 "Name" : "hello-world",
                 "ServiceRole" : "arn:aws:iam::576912678702:role/codebuild_nginx_jenkins",
